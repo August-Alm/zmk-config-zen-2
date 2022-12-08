@@ -62,12 +62,12 @@ name: name##_macro {                      \
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
 // | BTCLR | BT0  | BT1  | BT2  | BT3  | BT4  |     | DEL | BKSP | ESC | INS | none | PWR  |
-// | none  | OPT  | CTL  | CMD  | SHFT | PLAY |     | LFT | DWN  | UP  | RGT | CAPS | none |
+// | none  | OPT  | CTL  | CMD  | SHFT | none |     | LFT | DWN  | UP  | RGT | CAPS | none |
 // | none  | srch | :Q   | :W   | :U   | :PU  |     | HOM | PGD  | PGU | END | none | none |
 //                       |      |      |      |     | FUN | RET  | TAB |
                         bindings = <
    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp DEL  &kp BSPC  &kp ESC   &kp INS   &none    &kp C_PWR
-   &bt none    &kp LALT     &kp LCTL     &kp LCMD     &kp LSHFT    &kp none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp CAPS &none
+   &kp none    &kp LALT     &kp LCTL     &kp LCMD     &kp LSHFT    &kp none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp CAPS &none
    &kp none    &vim_s       &vim_q       &vim_w       &vim_u       &vim_pu       &kp HOME &kp PG_DN &kp PD_UP &kp END   &none    &none
                           	         &trans       &trans       &trans        &mo FUN  &kp RET   &kp TAB
                         >;
