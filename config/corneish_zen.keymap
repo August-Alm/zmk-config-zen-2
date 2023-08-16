@@ -7,10 +7,10 @@
 #define NAV     1
 #define SYM     2
 #define FUN     3
-#define NUM     4
+#define PAD     4
 
 &mt {
-        tapping-term-ms = <200>;
+        tapping-term-ms = <250>;
 };
 
 #define MACRO(name, keys)                 \
@@ -47,13 +47,13 @@ name: name##_macro {                      \
                         label = "DAKTYL";
 // -----------------------------------------------------------------------------------------
 // |   ¨  |  Q  |  Y  |  O  |  U  |  ´  |   |  V  |  D   |  G  |  J  |  X  |  §   |
-// |   -  |  C  |  I  |  E  |  A  |  ,  |   |  K  |  T   |  S  |  R  |  L  |  -   |
-// |   "  |  W  |  Å  |  Ö  |  Ä  |  .  |   |  P  |  B   |  F  |  M  |  Z  | NUM  |
+// |   -  |  C  |  I  |  E  |  A  |  ,  |   |  K  |  T   |  S  |  R  |  L  |  '   |
+// |   "  |  W  |  Å  |  Ö  |  Ä  |  .  |   |  P  |  B   |  F  |  M  |  Z  | PAD  |
 //                    | NAV | SPC | NAV |   | SYM |  N   |  H |
                         bindings = <
-   &kp RBKT   &kp Q      &kp Y       &kp O      &kp U       &kp EQUAL   &kp V   &kp D       &kp G      &kp J       &kp X      &kp RA(S) //0x00A7
-   &kp FSLH   &mt LALT C &mt LCTRL I &mt LCMD E &mt LSHFT A &kp COMMA   &kp K   &mt RSHFT T &mt RCMD S &mt RCTRL R &mt LALT L &kp BSLH
-   &kp LS(N2) &kp W      &kp LBKT    &kp SEMI   &kp SQT     &kp DOT     &kp P   &kp B       &kp F      &kp M       &kp Z      &tog NUM
+   &kp RBKT   &kp Q      &kp Y       &kp O      &kp U       &kp EQUAL   &kp V   &kp D       &kp G      &kp J       &kp X      &kp 0x00A7
+   &kp FSLH   &mt LALT C &mt LCTRL I &mt LCMD E &mt LSHFT A &kp COMMA   &kp K   &mt RSHFT T &mt RCMD S &mt RCTRL R &mt LALT L &kp HASH
+   &kp LS(N2) &kp W      &kp LBKT    &kp SEMI   &kp SQT     &kp DOT     &kp P   &kp B       &kp F      &kp M       &kp Z      &tog PAD
                                      &tog NAV   &kp SPACE   &mo NAV     &mo SYM &kp N       &mt RALT H
                         >;
                 };
