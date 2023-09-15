@@ -51,7 +51,7 @@ name: name##_macro {                      \
 // |   "  |  W  |  Å  |  Ö  |  Ä  |  .  |   |  P  |  B   |  F  |  M  |  Z  | PAD  |
 //                    | NAV | SPC | NAV |   | SYM |  N   |  H |
                         bindings = <
-   &kp RBKT   &kp Q      &kp Y       &kp O      &kp U       &kp EQUAL   &kp V   &kp D       &kp G      &kp J       &kp X      &kp 0x00A7
+   &kp RBKT   &kp Q      &kp Y       &kp O      &kp U       &kp EQUAL   &kp V   &kp D       &kp G      &kp J       &kp X      &kp LS(EQUAL)
    &kp FSLH   &mt LALT C &mt LCTRL I &mt LCMD E &mt LSHFT A &kp COMMA   &kp K   &mt RSHFT T &mt RCMD S &mt RCTRL R &mt LALT L &kp HASH
    &kp LS(N2) &kp W      &kp LBKT    &kp SEMI   &kp SQT     &kp DOT     &kp P   &kp B       &kp F      &kp M       &kp Z      &tog PAD
                                      &tog NAV   &kp SPACE   &mo NAV     &mo SYM &kp N       &mt RALT H
